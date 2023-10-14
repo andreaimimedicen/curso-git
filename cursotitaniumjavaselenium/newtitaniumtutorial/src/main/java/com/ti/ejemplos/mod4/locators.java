@@ -27,7 +27,7 @@ public class locators {
         driver.findElement(By.id("newButtonName")).sendKeys("a different thing to sendText");
         driver.findElement(By.id("updatingButton")).click();
         actualResult2 = driver.findElement(By.id("updatingButton")).getText();
-        System.out.println(actualResult2.contains("a different thing to sendText")?"Button was clicking and text is the expected": "FAILED! text is "+actualResult);
+        System.out.println(actualResult2.contains("a different thing to sendText")?"Button was clicking and text is the expected": "FAILED! text is "+actualResult2);
 
 
         driver.quit();
